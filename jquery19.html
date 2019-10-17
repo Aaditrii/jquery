@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+alert("the text shows"+$("p").text());
+});
+$("#b2").click(function(){
+alert("this text shows"+$("p").html());
+});
+});
+</script>
+</head>
+<body>
+<p id="p1">this is a very imp <u>text</u></p>
+<button id="b1">text</button>
+<button id="b2">html</button>
+</body>
+</html>
