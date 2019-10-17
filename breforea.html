@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#b1").click(function(){
+$("#l2").before("<li>white</li>");
+});
+$("#b2").click(function(){
+$("#l3").after("<li>orange</li>");
+});
+});
+</script>
+</head>
+<body>
+<p id="p1">add some text</p>
+<ol id="l1" type="1">
+<li id="l2">blue</li>
+<li>green</li>
+<li id="l3">pink</li>
+</ol>
+<button id="b1">before</button>
+<button id="b2">after</button>
+</body>
+</html>
