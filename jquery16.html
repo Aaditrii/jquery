@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".b1").click(function(){
+$("div").slideDown(3000);
+});
+$(".b2").click(function(){
+$("div").stop();
+});
+});
+</script>
+</head>
+<body>
+<button class="b1">slide</button>
+<button class="b2">stop</button>
+<div style="background-color:orange;height:150px;width:150px;display:none"></div>
+<div style="background-color:white;height:150px;width:150px;display:none"></div>
+<div style="background-color:green;height:150px;width:150px;display:none"></div>
+</body>
+</html>
