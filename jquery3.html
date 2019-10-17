@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>button hide</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$(".button1").click(function(){
+$("h1").hide();
+});
+$(".button2").click(function(){
+$("h1").show(1000);
+});
+});
+</script>
+</head>
+<body>
+<h1>hello hide me</h1>
+<h1>hello too</h1>
+<button class="button1">hide</button>
+<button class="button2">show</button>
+</body>
+</html>
