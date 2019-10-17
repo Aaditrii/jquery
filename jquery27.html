@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("p,h1").toggleClass("c1");
+});
+});
+</script>
+<style>
+.c1
+{
+font-size:50px;
+color:red;
+}
+.c2
+{
+font-size:100px;
+color:yellow;
+}
+</style>
+</head>
+<body>
+<p>hi</p>
+<h1>hello</h1>
+<p>bye</p>
+<button>click</button>
+</body>
+</html>
