@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#i1").focus(function(){
+				alert("focus event");
+			});
+			$("textarea").blur(function(){
+				alert("blur event");
+			});
+			$(this).change(function(){
+				alert("the value of gender changed");
+			});
+			$(this).select(function(){
+				alert("text selected");
+			});
+			$("form").submit(function(){
+				alert("form submitted submitted");
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<form action="change.html">
+		<label>name</label>
+		<input id="i1" type="text" name="name1" value="aaditri"><br/>
+		<label>address</label>
+		<textarea rows="10" cols="10"></textarea><br/>
+		<input type="radio" name="gender" value="male">Male<br/>
+		<input type="radio" name="gender" value="female">Female<br/>
+		<label>hobbies</label>
+		<input type="text" name="hobbies">
+		<input type="submit" value="submit">
+	</form>
+			</body>
+	</html>
