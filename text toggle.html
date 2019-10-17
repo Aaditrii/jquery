@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#o1").slideToggle(2000);
+});
+});
+</script>
+<style>
+table
+{
+border:1px solid black;
+height:400px;
+width:600px;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<ol type="1" id="o1">
+<li>CSE</li>
+<ol type="a" id="o2">
+<li>CST</li>
+<li>NMST</li>
+<li>DBMS</li>
+</ol>
+<li>ECE</li>
+<ol type="a" id="o3">
+<li>DELD</li>
+<li>MP</li>
+<li>WC</li>
+</ol>
+</ol>
+<button>toggle</button>
+</td>
+</tr>
+</body>
+</html>
