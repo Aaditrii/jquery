@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var lastt,tdiff;
+		$("p").click(function(event){
+			if(lastt){
+			tdiff=event.timeStamp-lastt;
+			$("div").append("the no of milliseconds is"+" "+tdiff+"<br/>");
+		}
+		else{
+			$("div").append("click one more time <br/>");
+			lastt=event.timeStamp;
+		}
+		});
+
+	});
+</script>
+</head>
+<body>
+	<p>double click on the paragraph tag</p> 
+	<div>answer</div>
+	</body>
+	</html>
